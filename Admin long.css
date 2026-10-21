@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0; /* Prevents default browser spacing/scrollbars */
+  background-color: black;
+}
+h1{font-family: sans-serif; color: lightblue;text-align: center;}
+p{font-family: sans-serif; color: lightblue;text-align: center;}

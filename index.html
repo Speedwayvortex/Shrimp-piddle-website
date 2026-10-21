@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="Admin long.css">
+</head>
+<body>
+    <h1>ADMIN LOGIN</h1>
+    <input type="password" id="pwd">
+<button onclick="checkPwd()">Login</button>
+<p id="msg"></p>
+
+<script>
+    let failedAttempts = 0;
+
+    function checkPwd() {
+        let correct = "190926";
+        let entered = document.getElementById("pwd").value;
+        
+        if (entered != correct) {
+            failedAttempts++;
+            document.getElementById("msg").innerHTML = failedAttempts >= 3
+                ? "<p>Incorrect Password</p><p>HINT: Kpzjvyk pu aol nyvbw, Ipvnyhwof ylclahs hss</p>"
+                : "<p>Incorrect Password</p>";
+        } else {
+            // Displays success message and redirects to the website
+            document.getElementById("msg").innerHTML = "Correct Password";
+            window.location.href = "Login sucsess.html"; 
+        }
+        
+          
+    }
+</script>
+</body>
+
+
+
+
+
+    
+</body>
+</html>
+

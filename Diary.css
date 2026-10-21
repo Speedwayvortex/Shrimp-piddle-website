@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: vh;
+  margin: 0; /* Prevents default browser spacing/scrollbars */
+  background-color: black;
+}
+h1{font-family: sans-serif; color: lightblue;text-align: center;}
+p{font-family: sans-serif; color: lightblue;text-align: center;}
+.image-button {
+  background: none;    /* Removes default button background */
+  border: none;        /* Removes default button border */
+  padding: 0;          /* Removes default inner padding */
+  cursor: pointer;     /* Changes cursor to a hand pointer on hover */
+}
+
+/* Optional: Removes the outline when the button is clicked, 
+   but keeps it visible for keyboard accessibility */
+.image-button:focus-visible {
+  outline: 2px solid #007bff; 
+}
+h3{font-family: sans-serif; color: lightblue;text-align: center;}
+hr{width:90%;text-align:center;margin:0}
